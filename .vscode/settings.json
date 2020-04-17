@@ -1,0 +1,13 @@
+{
+    "explorer.confirmDelete": false,
+    "editor.formatOnSave": true,
+    "workbench.colorTheme": "Monokai",
+    "emeraldwalk.runonsave": {
+        "commands": [
+            {
+                "match": "\\.php$",
+                "cmd": "${workspaceRoot}/vendor/bin/php-cs-fixer fix --rules=@Symfony ${file}"
+            }
+        ]
+    },
+}
