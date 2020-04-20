@@ -73,6 +73,7 @@ class Nibo
         $requestParams = [
             'query' => ['Organization' => $this->organizationId],
             'headers' => ['apitoken' => $this->apiToken],
+            'http_errors' => false,
         ];
 
         switch ($method) {
