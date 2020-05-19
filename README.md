@@ -8,8 +8,15 @@ Simple Nibo api wrapper
 -   getCustomer
 -   createCustomer
 -   createReceipt
+-   createScheduleCredit
+
+### Install
+
+    composer require pedrocasado/nibo-php
 
 ### Example
+
+    use NiboPhp\Nibo;
 
     $nibo = new Nibo([
         'apiToken' => 'xxx',

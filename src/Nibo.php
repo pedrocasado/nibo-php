@@ -66,6 +66,13 @@ class Nibo
         return $this->request($route, $data, 'POST');
     }
 
+    public function createScheduleCredit(array $data)
+    {
+        $route = 'schedules/credit/FormatType=json';
+
+        return $this->request($route, $data, 'POST');
+    }
+
     protected function request(string $route, array $parameters = [], $method = 'GET')
     {
         $client = new \GuzzleHttp\Client(['base_uri' => self::API_BASE_URL]);
