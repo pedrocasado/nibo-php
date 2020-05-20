@@ -9,6 +9,7 @@ Simple Nibo api wrapper
 -   createCustomer
 -   createReceipt
 -   createScheduleCredit
+-   receiveSchedule
 
 ### Install
 
@@ -41,4 +42,12 @@ Simple Nibo api wrapper
         "date": "string",
         "description": "string",
         "isFlag": true
+    ]);
+
+    $uuid = $nibo->receiveSchedule('da977074-7cf1-4dbc-b3f3-25effbb72e49', [
+        'accountId' => '0351a02c-d92e-4b80-9cb2-a11badb5e8c3',
+        'payingType' => 'close',
+        'value' => 200.00,
+        'date' => '2020-06-20',
+        'identifier' => '2423324323',
     ]);
